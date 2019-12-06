@@ -16,7 +16,6 @@ public class RNAndroidUpdateMattPackage implements ReactPackage {
       return Arrays.<NativeModule>asList(new RNAndroidUpdateMattModule(reactContext));
     }
 
-    @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return null;
     }

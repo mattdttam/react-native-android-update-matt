@@ -27,10 +27,12 @@ android {
     }
 }
 
-repositories {
-    mavenCentral()
-    google()
-    jcenter()
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+    }
 }
 
 dependencies {
