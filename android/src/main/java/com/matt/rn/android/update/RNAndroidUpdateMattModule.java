@@ -1,7 +1,6 @@
 
 package com.matt.rn.android.update;
 
-import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.allenliu.versionchecklib.core.http.HttpHeaders;
@@ -41,7 +40,6 @@ public class RNAndroidUpdateMattModule extends ReactContextBaseJavaModule {
             .setHttpHeaders(headers)
             .request(new RequestVersionListener() {
 
-              @Nullable
               @Override
               public UIData onRequestVersionSuccess(DownloadBuilder downloadBuilder, String response) {
                 Log.d("rn-android-update-matt",response);
@@ -58,7 +56,7 @@ public class RNAndroidUpdateMattModule extends ReactContextBaseJavaModule {
                           UIData uiData = UIData
                                   .create()
                                   .setDownloadUrl(data.getString("url"))
-                                  .setTitle("安装新版本" + data.getString("version"))
+                                  .setTitle("版本" + data.getString("version"))
                                   .setContent(data.getString("description"));
                           return uiData;
                       }
