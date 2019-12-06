@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Author: 党辉
+ * @Date: 2019-12-05 11:19:38
+ * @LastEditors: 党辉
+ * @LastEditTime: 2019-12-06 17:03:35
+ -->
 # react-native-android-update-matt
 
 ## Getting started
@@ -41,5 +48,17 @@ componentDidMount() {
     clearTimeout(this.upgradeTimer);
     this.upgradeTimer = null;
   }
+```
+
+```java server
+@RequestMapping("/appUpdate")
+public Response appUpdate() {
+    Map map = new HashMap();
+    map.put("version", "x.x.x");
+    map.put("description", new String[] {"xxx","xxx");
+    map.put("url", "http://xxx.xxx.xxx.xxx/xx.apk");
+    return new Response().success(map);
+} 
+
 ```
   
