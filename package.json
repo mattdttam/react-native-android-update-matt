@@ -1,7 +1,6 @@
-
 {
   "name": "react-native-android-update-matt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A ReactNative Update Component for android",
   "main": "index.js",
   "scripts": {
@@ -9,13 +8,13 @@
   },
   "keywords": [
     "react-native",
-	"react-component",
-	"react-native-component",
-	"react",
-	"mobile",
-	"android",
-	"update",
-	"upgrade"
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "android",
+    "update",
+    "upgrade"
   ],
   "author": {
     "name": "matt",
