@@ -31,7 +31,7 @@ public class RNAndroidUpdateMattModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void update(final String url,final String version, final String token) {
+  public void update(final String url, final String version, final String token) {
       HttpHeaders headers = new HttpHeaders();
       headers.put("token", token);
       AllenVersionChecker
