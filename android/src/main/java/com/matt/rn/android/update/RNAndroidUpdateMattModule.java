@@ -1,4 +1,3 @@
-
 package com.matt.rn.android.update;
 
 import android.util.Log;
@@ -56,7 +55,7 @@ public class RNAndroidUpdateMattModule extends ReactContextBaseJavaModule {
                           UIData uiData = UIData
                                   .create()
                                   .setDownloadUrl(data.getString("url"))
-                                  .setTitle("版本" + data.getString("version"))
+                                  .setTitle("安装新版本" + data.getString("version"))
                                   .setContent(data.getString("description"));
                           return uiData;
                       }
