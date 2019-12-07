@@ -3,7 +3,7 @@
  * @Author: 党辉
  * @Date: 2019-12-05 11:19:38
  * @LastEditors: 党辉
- * @LastEditTime: 2019-12-06 17:03:35
+ * @LastEditTime: 2019-12-07 14:26:29
  -->
 # react-native-android-update-matt
 
@@ -59,6 +59,20 @@ public Response appUpdate() {
     map.put("url", "http://xxx.xxx.xxx.xxx/xx.apk");
     return new Response().success(map);
 } 
+
+Response---
+
+{
+  meta:{
+    success: true,
+    message: 'ok'
+  },
+  data {
+    version: 'x.x.x',
+    description: ["xxx","xxx"],
+    url: 'http://xxx.xxx.xxx.xxx/xx.apk'
+  }
+}
 
 ```
   
