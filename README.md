@@ -3,7 +3,7 @@
  * @Author: 党辉
  * @Date: 2019-12-05 11:19:38
  * @LastEditors: 党辉
- * @LastEditTime: 2019-12-07 16:37:38
+ * @LastEditTime: 2019-12-09 16:29:39
  -->
 # react-native-android-update-matt
 
@@ -20,7 +20,7 @@
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/PackageList.java`
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.matt.rn.android.update.RNAndroidUpdateMattPackage;` to the imports at the top of the file
   - Add `new RNAndroidUpdateMattPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
