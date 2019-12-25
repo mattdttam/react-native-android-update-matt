@@ -1,10 +1,3 @@
-<!--
- * @Description: 
- * @Author: 党辉
- * @Date: 2019-12-05 11:19:38
- * @LastEditors: 党辉
- * @LastEditTime: 2019-12-09 16:29:39
- -->
 # react-native-android-update-matt
 
 ## Getting started
@@ -63,14 +56,12 @@ public Response appUpdate() {
     return new Response().success(map);
 } 
 
-Response---
+Response from server:
+-----
 
 {
-  meta:{
-    success: true,
-    message: 'ok'
-  },
-  data {
+  success: true,
+  result {
     version: 'x.x.x',
     description: ["xxx","xxx"],
     url: 'http://xxx.xxx.xxx.xxx/xx.apk'

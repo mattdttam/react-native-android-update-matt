@@ -31,7 +31,7 @@ public class RNAndroidUpdateMattModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void update(final String url, final String version, final String token) {
       HttpHeaders headers = new HttpHeaders();
-      headers.put("token", token);
+      headers.put("accessToken", token);
       AllenVersionChecker
             .getInstance()
             .requestVersion()
@@ -47,9 +47,9 @@ public class RNAndroidUpdateMattModule extends ReactContextBaseJavaModule {
                 downloadBuilder.setForceRedownload(false);
                 try {
                   JSONObject jsRes = new JSONObject(response);
-                  JSONObject meta = jsRes.getJSONObject("meta");
-                  if(meta.getBoolean("success")) {
-                      JSONObject data = jsRes.getJSONObject("data");
+                  //JSONObject meta = jsRes.getJSONObject("meta");
+                  if(jsRes.getBoolean("success")) {
+                      JSONObject data = jsRes.getJSONObject("result");
                       String latestVersion = data.getString("version");
                       if(CommonUtils.compareAppVersion(latestVersion, version) > 0) {
                           UIData uiData = UIData
