@@ -6,7 +6,7 @@ import {
 } from 'react-native'
 
 class AndroidUpdate {
-    update(url="",version="",token="") {
+    update(url="",version="",options={}) {
 		if(url.length <= 0){
 			ToastAndroid.show("更新地址不能为空", ToastAndroid.SHORT);
 			return;
@@ -23,7 +23,7 @@ class AndroidUpdate {
 			}
 		  ).then((granted)=>{
 			if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-				NativeModules.RNAndroidUpdateMatt.update(url,version,token);
+				NativeModules.RNAndroidUpdateMatt.update(url,version,options);
 			}else{
 				ToastAndroid.show("获取读写权限失败", ToastAndroid.SHORT);
 			}

@@ -35,14 +35,13 @@ componentDidMount() {
     this.upgradeTimer = setTimeout(() => {
       let url = x;
       let version = y;
-      let token = z;
-      AndroidUpdate.update(url, version, token);
+      let options = {token:xxx, dlUrlPrefix:xxx};
+      AndroidUpdate.update(url, version, options);
     }, 500);
   }
 
   componentWillUnmount() {
-    clearTimeout(this.upgradeTimer);
-    this.upgradeTimer = null;
+    this.upgradeTimer && clearTimeout(this.upgradeTimer);
   }
 ```
 
