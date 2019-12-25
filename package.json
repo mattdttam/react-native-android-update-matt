@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-update-matt",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A ReactNative Update Component for android",
   "main": "index.js",
   "scripts": {
